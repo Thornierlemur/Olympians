@@ -35,9 +35,8 @@ for _ in medals_df['discipline']:
             list.append(_)
 
     # [access row][access columns] 11='discipline'
-# print(temparray[0][9])
-# print(temparray[6][9])
-# print(temparray[23][9]) #15
+    # Now, store the discipline into a list of some sort, and then 
+    # convert it back to a pandas dataframe for easy manipulation (so we can just gather certain data and stuff)
 
 
 # for _ in medals_total_df['Country Code']:
