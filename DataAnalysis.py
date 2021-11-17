@@ -118,3 +118,8 @@ for _ in medals_df['discipline']:
         # plt.xticks(ages)
         plt.tight_layout(pad=1.0)
         plt.show()
+
+
+#Note: Now plot the graph for the average ages of all the disciplines.
+# Could do it so that it plots all the data
+# Or we only plot the top 3! just to see whats going on:)
