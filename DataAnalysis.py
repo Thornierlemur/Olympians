@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from datetime import date
+import seaborn as sns
 
 def calculateAge(birthDate):
     today = date.today()
@@ -166,7 +167,17 @@ plt.axhline(y=avgBronze, color='black', linestyle='-')
 
 plt.xlabel("Range of Data")
 plt.ylabel("Age")
-plt.title("Ages of People who won a Mdeal")
+plt.title("Ages of People who won a Medal")
 
 plt.legend()
 plt.show()
+
+# I wanted to see the average ages for Countries and see if the top 10 countries have Ages closer to the average than the Bottom 10 
+
+# Ages = 1 
+# index= [medals_total_df[:10]['Country Code']]
+# cols = [medals_total_df[-10:][:10]['Country Code']]
+# df = pd.DataFrame(Ages, index=index, columns=cols)
+
+# sns.heatmap(df, annot=True)
+# plt.show()
